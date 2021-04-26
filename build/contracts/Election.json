@@ -1,0 +1,386 @@
+{
+  "contractName": "Election",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "candidate",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"candidate\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/apple/Documents/Ethereum/election/contracts/Election.sol\":\"Election\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/apple/Documents/Ethereum/election/contracts/Election.sol\":{\"keccak256\":\"0x329cd4be9387bf6d2e6149b7c29631ac415647a9f8169e5ffc71983b8b5b9bdd\",\"urls\":[\"bzz-raw://904b5e2c16ad1edf0c26e69ea9d82ea91f62a35d8668e24360a341d50c3d035f\",\"dweb:/ipfs/Qme91p3TD4PDSWak8A1L5tdaJM21Znu22dc6yqtjZXxZbo\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040518060400160405280600481526020017f48756e67000000000000000000000000000000000000000000000000000000008152506000908051906020019061005c929190610062565b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b610186806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80636c8381f814610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158205c44ad2bee797169b51e229d38e8bd256d79ceea89cb394991a67f8098f9e7b864736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80636c8381f814610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158205c44ad2bee797169b51e229d38e8bd256d79ceea89cb394991a67f8098f9e7b864736f6c63430005100032",
+  "sourceMap": "59:125:0:-;;;125:51;8:9:-1;5:2;;;30:1;27;20:12;5:2;125:51:0;153:18;;;;;;;;;;;;;;;;;:9;:18;;;;;;;;;;;;:::i;:::-;;59:125;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "59:125:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:125:0;;;;;;;;;;;;;;;;;;;98:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;98:23:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.11;\n\ncontract Election {\n  // Constructor\n  string public candidate;\n  constructor () public {\n    candidate = \"Hung\";\n  }\n  \n  \n}",
+  "sourcePath": "/Users/apple/Documents/Ethereum/election/contracts/Election.sol",
+  "ast": {
+    "absolutePath": "/Users/apple/Documents/Ethereum/election/contracts/Election.sol",
+    "exportedSymbols": {
+      "Election": [
+        12
+      ]
+    },
+    "id": 13,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:25:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12,
+        "linearizedBaseContracts": [
+          12
+        ],
+        "name": "Election",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "candidate",
+            "nodeType": "VariableDeclaration",
+            "scope": 12,
+            "src": "98:23:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10,
+              "nodeType": "Block",
+              "src": "147:29:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "candidate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "153:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "48756e67",
+                      "id": 7,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "165:6:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_9cde4488fd91fba291a245b6ccd54eff83a63a42363c871ecaeaad8b436ff7f9",
+                        "typeString": "literal_string \"Hung\""
+                      },
+                      "value": "Hung"
+                    },
+                    "src": "153:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 9,
+                  "nodeType": "ExpressionStatement",
+                  "src": "153:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "137:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:0:0"
+            },
+            "scope": 12,
+            "src": "125:51:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 13,
+        "src": "59:125:0"
+      }
+    ],
+    "src": "32:152:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/apple/Documents/Ethereum/election/contracts/Election.sol",
+      "exportedSymbols": {
+        "Election": [
+          12
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".11"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "32:25:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            12
+          ],
+          "name": "Election",
+          "scope": 13
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "candidate",
+              "scope": 12,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "98:6:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "98:23:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 12,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "137:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "147:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "string storage ref",
+                              "value": "candidate"
+                            },
+                            "id": 6,
+                            "name": "Identifier",
+                            "src": "153:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "48756e67",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Hung\"",
+                              "value": "Hung"
+                            },
+                            "id": 7,
+                            "name": "Literal",
+                            "src": "165:6:0"
+                          }
+                        ],
+                        "id": 8,
+                        "name": "Assignment",
+                        "src": "153:18:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "ExpressionStatement",
+                    "src": "153:18:0"
+                  }
+                ],
+                "id": 10,
+                "name": "Block",
+                "src": "147:29:0"
+              }
+            ],
+            "id": 11,
+            "name": "FunctionDefinition",
+            "src": "125:51:0"
+          }
+        ],
+        "id": 12,
+        "name": "ContractDefinition",
+        "src": "59:125:0"
+      }
+    ],
+    "id": 13,
+    "name": "SourceUnit",
+    "src": "32:152:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x7DecB26D23B3EcFdf2Fe3Ab4F98aF221FEbb1b2e",
+      "transactionHash": "0x68cbb6806725e3943a521e914d069e5bfed9a117d60b78ff9679f237ba474558"
+    }
+  },
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-04-25T15:39:47.433Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
